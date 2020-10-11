@@ -27,6 +27,7 @@
 			</div>
 		</q-header>-->
 		
+		<!--view directives-->
 		<q-page-container >
 			<div class=" col main-row" >
 				<div class="col dead bg-dark"/>

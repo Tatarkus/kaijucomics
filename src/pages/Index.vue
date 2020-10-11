@@ -54,23 +54,23 @@ export default {
   },
   data() {
     return {
-      comics: [
-        {
-          id: 1,
-          th_src: "bunny01.jpg",
-          th_alt_src: "bunny02.jpg",
-          folder:'comic1'
-        },
-        {
-          id: 3,
-          th_src: "wolf01.jpg",
-          th_alt_src: "wolf02.jpg",
-          folder:'comic2'
-        }
-        
-
-      ]
+      comics: ""
     }
+  },
+  /*created: function () {
+    var _this = this;
+    $.getJSON('comics.json', function (comics) {
+    _this.comics = json;
+    console.log(json)
+    console.log(comics)
+    });*/
+  created:function(){
+    fetch('comics.json')
+    .then(r=>r.json())
+    .then(json=> {
+      this.comics=json.comics
+    })
+    
   }
 }
 </script>
