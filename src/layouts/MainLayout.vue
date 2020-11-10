@@ -47,7 +47,7 @@
 								<div class="row"  >
 									<q-toolbar  class=" text-white q-my justify-center" style="background-color:#404040" >
 										<q-btn-toggle
-											v-model="model"
+											value="toggle_one"
 											flat					
 											stretch
 											toggle-color="yellow"

@@ -24,14 +24,7 @@
 
 
     
- <q-page-sticky  v-if="this.$q.platform.is.mobile" position="top" >
 
-    <h4 class=" comic-text text-center bg-dark">
-        
-        Comics
-    </h4>
-         
-  </q-page-sticky>
 
   
   
