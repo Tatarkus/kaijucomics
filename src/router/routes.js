@@ -5,7 +5,14 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Index.vue') },
-      { path: 'chapters', component: () => import('pages/Chapters.vue') },
+      { path: 'chapters/', component: () => import('pages/Chapters.vue'),
+        name: 'chapters',
+        props:true,
+        children: [
+          { 
+            name:'chapter',
+            path:':chapterNumber', component: () => import('pages/Viewer.vue') }
+        ] },
     ]
   },
   {

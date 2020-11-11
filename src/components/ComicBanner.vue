@@ -1,4 +1,6 @@
 <template>
+
+    <router-link :to="{ name: 'chapters', params: {comic: comic } }">
     <q-img
     contain
     class="comic-banner"
@@ -6,6 +8,7 @@
     @mouseover="cambiarImagen= true"
     @mouseleave="cambiarImagen= false"
   />
+  </router-link>
 </template>
 
 <script>

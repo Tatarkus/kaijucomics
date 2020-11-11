@@ -6,13 +6,14 @@
           Comics
     </h4>
 
-    <router-link to='comic1'>
+    
       <template v-for="comic in comics">
+        
         <ComicBanner :comic="comic" :key="comic.id"/>
       </template>
       
         <!-- :src ="'/comics/' + comic.folder+ '/thumbnail/' + comic.th_src"-->
-    </router-link>
+    
 
   </div>
 
